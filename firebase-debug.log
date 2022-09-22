@@ -1,0 +1,65 @@
+[debug] [2022-09-22T16:04:01.043Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T16:04:01.045Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shakhzod\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-22T16:04:01.045Z] CLI Version:   11.9.0
+[debug] [2022-09-22T16:04:01.046Z] Platform:      win32
+[debug] [2022-09-22T16:04:01.046Z] Node Version:  v16.15.1
+[debug] [2022-09-22T16:04:01.047Z] Time:          Thu Sep 22 2022 18:04:01 GMT+0200 (Central European Summer Time)
+[debug] [2022-09-22T16:04:01.047Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T16:04:01.117Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T16:04:01.117Z] > authorizing via signed-in user (developer.student22@gmail.com)
+[debug] [2022-09-22T16:04:01.117Z] [iam] checking project disneyplus-clone-a33d5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-22T16:04:01.120Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions [none]
+[debug] [2022-09-22T16:04:01.120Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions x-goog-quota-user=projects/disneyplus-clone-a33d5
+[debug] [2022-09-22T16:04:01.120Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T16:04:02.113Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions 200
+[debug] [2022-09-22T16:04:02.113Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions {}
+[debug] [2022-09-22T16:04:02.113Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project disneyplus-clone-a33d5:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-09-22T16:04:02.115Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2022-09-22T16:04:02.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2022-09-22T16:04:02.610Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-09-22T16:04:02.611Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-09-22T16:04:02.612Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Shakhzod\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Shakhzod\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-09-22T17:01:35.528Z] ----------------------------------------------------------------------
+[debug] [2022-09-22T17:01:35.534Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shakhzod\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-22T17:01:35.535Z] CLI Version:   11.9.0
+[debug] [2022-09-22T17:01:35.535Z] Platform:      win32
+[debug] [2022-09-22T17:01:35.535Z] Node Version:  v16.15.1
+[debug] [2022-09-22T17:01:35.545Z] Time:          Thu Sep 22 2022 19:01:35 GMT+0200 (Central European Summer Time)
+[debug] [2022-09-22T17:01:35.546Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-22T17:01:35.703Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-22T17:01:35.704Z] > authorizing via signed-in user (developer.student22@gmail.com)
+[debug] [2022-09-22T17:01:35.704Z] [iam] checking project disneyplus-clone-a33d5 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-22T17:01:35.706Z] > refreshing access token with scopes: []
+[debug] [2022-09-22T17:01:35.709Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-22T17:01:35.709Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-22T17:01:36.175Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-22T17:01:36.177Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-22T17:01:36.215Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions [none]
+[debug] [2022-09-22T17:01:36.216Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions x-goog-quota-user=projects/disneyplus-clone-a33d5
+[debug] [2022-09-22T17:01:36.218Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-22T17:01:36.649Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions 200
+[debug] [2022-09-22T17:01:36.649Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/disneyplus-clone-a33d5:testIamPermissions {}
+[debug] [2022-09-22T17:01:36.650Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project disneyplus-clone-a33d5:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-09-22T17:01:36.654Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 [none]
+[debug] [2022-09-22T17:01:37.377Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 403
+[debug] [2022-09-22T17:01:37.378Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/disneyplus-clone-a33d5 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-09-22T17:01:37.383Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-09-22T17:01:37.388Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Shakhzod\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Shakhzod\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project disneyplus-clone-a33d5. Please make sure the project exists and your account has permission to access it.
